@@ -4,12 +4,13 @@ const Users = require('../users/users-model.js');
 
 module.exports = (req, res, next) => {
 
-  //
-  // simply check to see if the session object exists
-  // (in case SOMEONE configured things wrong...), and
-  // if it does, check for the .loggedin === true condition.
+  //----------------------------------------------------------------------------//
+  // simply check to see if the session object exists (in case SOMEONE
+  // configured things wrong...), and if it does, check for the .loggedin ===
+  // true condition.
   //
   // if that's all cool, then... NEXT!
+  //----------------------------------------------------------------------------//
   if (req.session && (req.session.loggedin === true)) {
     next();
   } else {
