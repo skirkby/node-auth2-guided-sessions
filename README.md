@@ -14,3 +14,9 @@ Guided project for **Web Auth II** Module.
 - [ ] type `npm run server` to start the API.
 
 Please follow along as the instructor adds support for `sessions` and `cookies` to the API.
+
+## Files with notes:
+- ./api/server.js
+- ./auth/auth-router.js
+- ./auth/restricted-middleware.js
+- ./users/users-router.js
